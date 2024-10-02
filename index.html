@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240918180331">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241002202238">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,41 +41,32 @@
 						<!-- Слайд -->
 						<div class="main-slider__slide slide-main-slider swiper-slide">
 							<div class="slide-main-slider__body">
-								<!--
-										<picture class="slide-main-slider__image" style="background-image: url(img/main-slider/001.jpg);">	
-										-->
-								</picture> <!--	може якийсь параллакс тексту-->
+								<picture data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slide-main-slider__image">
+									<img src="img/main-slider/main-slide-2110-800.png" alt="Main slide image">
+								</picture>
 								<div class="slide-main-slider__container container-slide-main-slider">
-									<h4 class="container-slide-main-slider__title">Nail</h4>
+									<h4 class="container-slide-main-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-x="100%">Nail</h4>
 									<div class="container-slide-main-slider__info">
-										<div class="container-slide-main-slider__text">
+										<div class="container-slide-main-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax-x="70%">
 											<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rerum nam commodi iusto tempora magnam necessitatibus fugit sunt laboriosam cupiditate dignissimos aut esse deserunt tempore, ullam, error incidunt fugiat! Dicta.</p>
 										</div>
-										<div class="container-slide-main-slider__subtitle">Master</div>
+										<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="100%" class="container-slide-main-slider__subtitle">Master</div>
 									</div>
 								</div>
 							</div>
-							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
-							<!--  
-							<div class="main-slider__arrows">
-								<button type="button" class="main-slider__arrow main-slider__arrow_prev _icon-arrow-slider"></button>
-								<button type="button" class="main-slider__arrow main-slider__arrow_next _icon-arrow-slider"></button>
-							</div>
-							-->
 						</div>
 						<div class="main-slider__slide slide-main-slider swiper-slide">
 							<div class="slide-main-slider__body">
-								<picture class="slide-main-slider__image">
+								<picture data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slide-main-slider__image" data-speed="-1" data-position="left">
 									<img src="img/main-slider/main-slide-03.png" alt="Main slider image">
 								</picture>
-
 								<div class="slide-main-slider__container container-slide-main-slider">
-									<h4 class="container-slide-main-slider__title">Nail</h4>
+									<h4 class="container-slide-main-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-x="100%">Nail</h4>
 									<div class="container-slide-main-slider__info">
-										<div class="container-slide-main-slider__text">
+										<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="70%" class="container-slide-main-slider__text">
 											<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rerum nam commodi iusto tempora magnam necessitatibus fugit sunt laboriosam cupiditate dignissimos aut esse deserunt tempore, ullam, error incidunt fugiat! Dicta.</p>
 										</div>
-										<div class="container-slide-main-slider__subtitle">Master</div>
+										<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="100%" class="container-slide-main-slider__subtitle">Master</div>
 									</div>
 								</div>
 							</div>
@@ -88,7 +79,250 @@
 					</div>
 				</div>
 			</section>
-
+			<section class="page__product product">
+				<div class="product__container">
+					<div class="product__header header-product">
+						<div class="header-product__content">
+							<h2 class="header-product__title">Наша продукція</h2>
+							<div class="header-product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio deserunt adipisci architecto quo minus cum quis mollitia debitis assumenda odit accusantium voluptas harum cupiditate esse rerum molestiae vitae amet.</div>
+						</div>
+						<a href="#" class="header-product__link">Зв'язатися з нами</a>
+					</div>
+					<div data-tabs class="product__tabs tabs-product">
+						<nav data-tabs-titles class="tabs-product__navigation">
+							<button type="button" class="tabs-product__title _tab-active">Крема</button>
+							<button type="button" class="tabs-product__title">Кератолітики, ремувери</button>
+							<button type="button" class="tabs-product__title">Клінсери</button>
+							<button type="button" class="tabs-product__title">Дезодоранти</button>
+							<button type="button" class="tabs-product__title">Скарби</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs-product__body">
+								<div class="tabs-product__item item-tabs">
+									<div class="item-tabs__items">
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 15% Urea - Organic foot cream - 50 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_15.webp" type="image/webp"><img src="img/product/Foot_cream_15.jpg" alt="Foot cream 15%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">150 грн.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-product__body">
+								<div class="tabs-product__item item-tabs">
+									<div class="item-tabs__items">
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин и загрубілої шкіри 15% Urea - Organic foot cream - 100 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_15.webp" type="image/webp"><img src="img/product/Foot_cream_15.jpg" alt="Foot cream 15%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">250 грн.</p>
+										</div>
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 30% Urea - Organic foot cream - 50 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/test_small_01.webp" type="image/webp"><img src="img/product/test_small_01.png" alt="Foot cream 30%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">280 грн.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-product__body">
+								<div class="tabs-product__item item-tabs">
+									<div class="item-tabs__items">
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 15% Urea - Organic foot cream - 50 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_small_15.webp" type="image/webp"><img src="img/product/Foot_cream_small_15.jpg" alt="Foot cream 15%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">150 грн.</p>
+										</div>
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 30% Urea - Organic foot cream - 50 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/test_small_01.webp" type="image/webp"><img src="img/product/test_small_01.png" alt="Foot cream 30%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">280 грн.</p>
+										</div>
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 30% Urea - Organic foot cream - 100 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_30.webp" type="image/webp"><img src="img/product/Foot_cream_30.jpg" alt="Foot cream 30%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">280 грн.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-product__body">
+								<div class="tabs-product__item item-tabs">
+									<div class="item-tabs__items">
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 15% Urea - Organic foot cream - 50 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_small_15.webp" type="image/webp"><img src="img/product/Foot_cream_small_15.jpg" alt="Foot cream 15%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">150 грн.</p>
+										</div>
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 30% Urea - Organic foot cream - 100 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_30.webp" type="image/webp"><img src="img/product/Foot_cream_30.jpg" alt="Foot cream 30%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">280 грн.</p>
+										</div>
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 30% Urea - Organic foot cream - 100 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_30.webp" type="image/webp"><img src="img/product/Foot_cream_30.jpg" alt="Foot cream 30%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">280 грн.</p>
+										</div>
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 30% Urea - Organic foot cream - 100 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_30.webp" type="image/webp"><img src="img/product/Foot_cream_30.jpg" alt="Foot cream 30%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">280 грн.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-product__body">
+								<div class="tabs-product__item item-tabs">
+									<div class="item-tabs__items">
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 15% Urea - Organic foot cream - 50 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_small_15.webp" type="image/webp"><img src="img/product/Foot_cream_small_15.jpg" alt="Foot cream 15%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">150 грн.</p>
+										</div>
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 30% Urea - Organic foot cream - 50 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_small_30.webp" type="image/webp"><img src="img/product/Foot_cream_small_30.jpg" alt="Foot cream 30%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">280 грн.</p>
+										</div>
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 30% Urea - Organic foot cream - 100 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_30.webp" type="image/webp"><img src="img/product/Foot_cream_30.jpg" alt="Foot cream 30%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">280 грн.</p>
+										</div>
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 30% Urea - Organic foot cream - 100 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_30.webp" type="image/webp"><img src="img/product/Foot_cream_30.jpg" alt="Foot cream 30%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">280 грн.</p>
+										</div>
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 15% Urea - Organic foot cream - 50 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_small_15.webp" type="image/webp"><img src="img/product/Foot_cream_small_15.jpg" alt="Foot cream 15%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">150 грн.</p>
+										</div>
+										<div class="item-tabs__card">
+											<div class="item-tabs__options">
+												<h4 class="item-tabs__title">Крем від тріщин та загрубілої кожи 15% Urea - Organic foot cream - 50 мл</h4>
+											</div>
+											<a href="#" class="item-tabs__image-ibg">
+												<picture><source srcset="img/product/Foot_cream_small_30.webp" type="image/webp"><img src="img/product/Foot_cream_small_30.jpg" alt="Foot cream 15%"></picture>
+											</a>
+											<p class="item-tabs__description">
+												Крем для рук та ніг, який запобігає утворенню тріщин та гіперкератозу.В основі крему - суміш олії персикових кісточок, ланоліну, вітаміну Е, гліцерину, що мають зволожуючі, живильні та розгладжуючі властивості, сприяють процесам регенерації, утворюючи захисну плівку.Використовувати крем для ступнів, колін та ліктів
+											</p>
+											<p class="item-tabs__price">150 грн.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section data-fp-section class="page__portfolio portfolio">
 				<div class="portfolio__container">
 					<div class="portfolio__header">
@@ -329,11 +563,11 @@
 					<div class="footer__contacts contacts-footer">
 						<div class="contacts-footer__body">
 							<div class="contacts-footer__label label-footer">Телефон</div>
-							<a href="tel:02220277564" class="contacts-footer__value">+380-676123521</a>
+							<a href="tel:+380676123521" class="contacts-footer__value">+380-676123521</a>
 							<div class="contacts-footer__label label-footer">Сервісний центр</div>
-							<a href="tel:02220277564" class="contacts-footer__value">+380-676123521</a>
+							<a href="tel:+380676123521" class="contacts-footer__value">+380-676123521</a>
 							<div class="contacts-footer__label label-footer">Customer Service</div>
-							<a href="tel:02220277564" class="contacts-footer__value">+380-676123521</a>
+							<a href="tel:+380676123521" class="contacts-footer__value">+380-676123521</a>
 							<div class="footer__social social">
 								<a href="#" class="social__item _icon-s-facebook"></a>
 								<a href="#" class="social__item _icon-s-instagram"></a>
@@ -355,7 +589,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240918180331"></script>
+	<script src="js/app.min.js?_v=20241002202238"></script>
 </body>
 
 </html>
